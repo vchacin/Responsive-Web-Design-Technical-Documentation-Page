@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> 
-    <title>Document</title>
+    <title>Blender</title>
 </head>
 <body>
     <main id="main-doc">
-        <nav id="navbar"></nav>
-        <section class="main-section">
-            <h2>Introduction</h2>
+        <nav id="navbar">
+          <header>Blender Software</header>
+          <div><a class="nav-link" href="#Introduction">Introduction</a></div>
+          <div><a class="nav-link" href="#Key_Features">Key Features</a></div>
+          <div><a class="nav-link" href="#About_Free_Software">About Free Software</a></div>
+          <div><a class="nav-link" href="#Support_Requirements">Support Requirements</a></div>
+          <div><a class="nav-link" href="#Download_Blender">Download Blender</a></div>
+        </nav>
+        <section id="Introduction" class="main-section">
+     <header>Introduction</header>
+            <code>Welcome to Blender, the free and open source 3D creation suite.</code>
+            <p>Blender can be used to create 3D visualizations such as still images, 3D animations, VFX shots, and video editing.</p>
+            <p>Blender is well suited to individuals and small studios who benefit from its unified pipeline and responsive development process.</p>
+            <p>Blender is a cross-platform application, running on Linux, macOS, and Windows systems. Blender also has relatively small memory and drive requirements compared to other 3D creation suites. Its interface uses OpenGL to provide a consistent experience across all supported hardware and platforms.</p>
         </section>
-        <section class="main-section">
-            <h2>Introduction</h2>
+        <section id="Key_Features" class="main-section">
+            <header>Key Features</header>
+            <ul>
+              <li>Blender is a fully integrated 3D content creation suite, offering a broad range of essential tools, including Modeling, Rendering, Animation & Rigging, Video Editing, VFX, Compositing, Texturing, and many types of Simulations.</li>
+
+              <li>It is cross platform, with an OpenGL GUI that is uniform on all major platforms (and customizable with Python scripts).</li>
+
+              <li>It has a high-quality 3D architecture, enabling fast and efficient creation workflow.</li>
+
+              <li>It boasts active community support, see blender.org/community for an extensive list of sites.</li>
+
+              <li>It has a small executable, which is optionally portable.</li>
+            </ul>
+            <p>Blender makes it possible to perform a wide range of tasks, and it may seem daunting when first trying to grasp the basics. However, with a bit of motivation and the right learning material, it is possible to familiarize yourself with Blender after a few hours of practice.</p>
+            <code>This manual is a good start, though it serves more as a reference. There are also many online video tutorials from specialized websites.</code>
+            <code>Despite everything Blender can do, it remains a tool. Great artists do not create masterpieces by pressing buttons or manipulating brushes, but by learning and practicing subjects such as human anatomy, composition, lighting, animation principles, etc.</code>
+            <code>3D creation software such as Blender have an added technical complexity and jargon associated with the underlying technologies. Terms like UV maps, materials, shaders, meshes, and “subdivs” are the media of the digital artist, and understanding them, even broadly, will help you to use Blender to its best.</code>
         </section>
-        <section class="main-section">
-            <h2>Introduction</h2>
+        <section id="About_Free_Software" class="main-section">
+            <header>About Free Software</header>
+            <p>When one hears about “free software”, the first thing that comes to mind might be “no cost”. While this is often true, the term “free software” as used by the Free Software Foundation (originators of the GNU Project and creators of the GNU General Public License) is intended to mean “free as in freedom” rather than in the sense of “no cost” (which is usually referred to as “free as in free beer” or gratis). Free software in this sense is software which you are free to use, copy, modify, redistribute, with no limit. Contrast this with the licensing of most commercial software packages, where you are allowed to load the software on a single computer, are allowed to make no copies, and never see the source code. Free software allows incredible freedom to the end user. Since the source code is universally available, there are also many more chances for bugs to be caught and fixed.</p>
         </section>
-        <section class="main-section">
-            <h2>Introduction</h2>
+        <section id="Support_Requirements" class="main-section">
+            <header>Support Requirements</header>
+            <p>Blender is available for download on Windows, macOS, and Linux. Always check that the graphics drivers are up to date and that OpenGL is well supported. Blender has a set of minimum and recommended requirements; so make sure these are met before trying to install Blender.</p>
+            <code>Support for other hardware such as graphic tablets and 3D mice are covered later in Configuring Hardware.</code>
         </section>
-        <section class="main-section">
-            <h2>Introduction</h2>
+        <section id="Download_Blender" class="main-section">
+            <header>Download Blender</header>
+            <p>Blender offers two different binary packages; you can choose from a stable release or a daily build. The first has the benefit of being more reliable, the latter provides the newest features, as they are developed, at the cost of stability.</p>
+            <p>Latest Stable Release: This is a binary distribution of the latest version of Blender. It is considered stable and without regressions.</p>
+            <p>Daily Builds: This is a binary distribution of Blender that is updated daily to include the newest changes in development. These versions are not as thoroughly tested as the stable release, and might break, although they are official and usually not highly experimental.</p>
+            <p>The procedure for installing a binary, either the latest stable release or a daily build, is the same. Follow the steps for your platform.</p>
         </section>
     </main>
 </body>
 </html>
-
-
-User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-User Story #8: I can see a nav element with a corresponding id="navbar".
-
-User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-User Story #15: My Technical Documentation page should use at least one media query.
